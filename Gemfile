@@ -32,6 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use Faker to seed the database
+gem 'faker',  :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
 group :development do
 # Access an IRB console on exception pages or by using <%= console %> in views
 end

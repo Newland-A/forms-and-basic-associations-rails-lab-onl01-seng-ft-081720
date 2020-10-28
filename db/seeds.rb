@@ -159,4 +159,14 @@ genres = Hash[[
   "Synthpop"
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
 
+5.times do
+  Artist.create(name: Faker::Artist.name)
+end
 
+5.times do 
+  Song.create(title: Faker::Movie.title, artist_id: rand(1..5))
+end
+
+5.times do
+  Note.create(content: Faker::Lorem.paragraph, song_id: rand(1..5))
+end
